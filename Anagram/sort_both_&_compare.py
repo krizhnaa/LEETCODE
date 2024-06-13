@@ -2,7 +2,7 @@
 # Also can use hashmap, which keeps the character of each string with their occurences
 
 s = "carrace"
-t = "raceca"
+t = "racecar"
 
 def isAnagram(s, t):
     sorted_s, sorted_t = ''.join(sorted(s)), ''.join(sorted(t))
