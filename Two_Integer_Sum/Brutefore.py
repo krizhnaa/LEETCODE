@@ -1,3 +1,4 @@
+# Time complexity is O(n^2)
 
 nums = [2, 1, 5, 3]
 target = 7
