@@ -1,19 +1,14 @@
 
-s = "tab a cat"
+s = "Was it a car or a cat I saw?"
 
 def isPalindrome(s):
 
-    reversed = []
-    org = []
-    for ch in s[-1::-1]:
-        if ch.isalnum():
-            reversed.append(ch.lower())
-
+    str = ""
     for ch in s:
         if ch.isalnum():
-            org.append(ch.lower())
+            str += ch.lower()
 
-    return ''.join(org) == ''.join(reversed)
+    return str == str[-1::-1]
 
 
 result = isPalindrome(s)
