@@ -1,7 +1,7 @@
 strs = ["act","pots","tops","cat","stop","hat"]
+strs = [""]
 
 def groupAnagram(strs):
-
     final_lst = []
     if len(strs) < 2:
         final_lst.append(strs)
@@ -25,8 +25,7 @@ def groupAnagram(strs):
                         strs.remove(i)
 
             final_lst.append(lst)
-        sorted_list = sorted(final_lst, key=len)
-    return sorted_list
+    return sorted(final_lst, key=len)
 
 result = groupAnagram(strs)
 print(result)
